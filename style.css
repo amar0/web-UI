@@ -1,0 +1,297 @@
+body, html {
+	font-family: 'maaxbold';
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+font-family: 'maaxbold';
+src: url('fonts/maaxbold.otf');
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.video-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.overlay {
+	/*background: repeating-linear-gradient(0deg, rgba(0,0,255,0.3),transparent);*/
+	background-size: 100% 5px;
+}
+
+.quote {
+	position: absolute;
+	width: 20em;
+	height: 5em;
+	color: #FFF;
+	top: calc(50% - 2em);
+	left: calc(50% - 10em);
+	display: table;
+	font-size: 2.2em;
+	text-align: center;
+}
+
+.quote_inner {
+	position: absolute;
+	color: #FFF;
+	top: calc(39% - 2em);
+	left: calc(50% - 10em);
+	display: table;
+	font-size: 2.2em;
+	text-align: center;
+}
+
+.logo h2 {
+	font-family: 'maaxbold';
+	position: absolute;
+	width: 25%;
+	color: #FFF;
+	top: calc(45% - 3em);
+	left: calc(65% - 2em);
+	display: table;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+/*.logo_inner h2 {
+	font-family: 'maaxbold';
+	position: absolute;
+	width: 25%;
+	color: #FFF;
+	top: -30%;
+	top: calc(27% - 3em);
+	left: calc(65% - 2em);
+	display: table;
+	font-size: 2.5em;
+	text-align: center;
+}*/
+
+.inner-logo {
+	width: 100%;
+	text-align: center;
+	font-size: 4em;
+	color: #FFF;
+}
+
+.dots-overlay {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    background: url("img/dots-small.png") left top repeat;
+}
+
+.box {
+	width: 100px;
+	height: 70px;
+	display: flex;
+	justify-content: end;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.Nav {
+	font-size: 40px;
+	cursor: pointer;
+	/*top: calc(11% - 1em);*/
+	top: 6%;
+	left: calc(7% - 1em);
+	position: absolute;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: calc(15% - 2em);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 62px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    outline: 0;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.inner-container {
+	background: #e9e9e9;
+	width: 96%;
+	height: 94%;
+	padding: 10px;
+	left: 2%;
+	top: 3%;
+	position: relative;
+}
+
+.row {
+	width: 50%;
+	text-align: center;
+	margin-left: 24%;
+	margin-top: 2%;
+}
+
+/*.fst-row {
+	width: 100%;
+	float: left;
+	padding: 12%;
+	border: 1px solid #635E5E;
+	color: #FFF;
+}*/
+
+.inner-box {
+	width: 100%;
+	float: left;
+	/*padding: 12%;*/
+	border: 1px solid #635E5E;
+}
+
+/*.fst-row:hover {
+	margin: 5px;
+	background: yellow;
+	padding: 77.5px;
+	border: 1px solid #635E5E;
+}*/
+
+.snd-row {
+	width: 50%;
+	float: left;
+	padding: 10%;
+	border: 1px solid #635E5E;
+	color: #FFF;
+}
+
+.trd-row {
+	width: 50%;
+	float: left;
+	padding: 10%;
+	border: 1px solid #635E5E;
+	color: #FFF;
+}
+
+.frth-row {
+	width: 50%;
+	float: left;
+	padding: 10%;
+	border: 1px solid #635E5E;
+	color: #FFF;
+}
+
+.fth-row {
+	width: 50%;
+	float: left;
+	padding: 10%;
+	border: 1px solid #635E5E;
+	color: #FFF;
+}
+
+.ion-arrow-right-c {
+	position: absolute;
+	top: calc(62% - 2em);
+	left: calc(108% - 1em);
+	color: #FFF;
+}
+
+.column-container {
+	width: 100%;
+}
+
+.left-column {
+	width: 50%;
+	height: 91vh;
+	float: left;
+}
+
+.content {
+	position: absolute;
+    top: calc(27% - 1em);
+    left: calc(17% - 2em);
+    font-size: 4em;
+    color: #2a2b2f;
+    width: 50%;
+}
+
+.name {
+	float: right;
+}
+
+.right-column {
+	width: 50%;
+	height: 91vh;
+	float: left;
+	font-family: "maaxbold";
+}
+
+.photo img {
+	width: 100%;
+	height: 91vh;
+}
+
+.number-container {
+	width: 100%;
+	height: 90vh;
+	font-size: 4.5em;
+	position: absolute;
+	top: calc(48% - 1em);
+}
+
+.icons {
+	position: absolute;
+	top: calc(43% + 7em);
+	width: 50%;
+	display: inline-block;
+	left: 1%;
+	font-size: 26px;
+	letter-spacing: 10px;
+}
